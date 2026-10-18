@@ -74,19 +74,29 @@ const WHATSAPP_NUMBER = "918296594446";
 let selectedLocationLink = "";
 function waLink(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
 function currentDeliveryDetails(){
-  const name=document.getElementById("customer-name").value.trim();
-  const item=document.getElementById("order-item").value;
-  const quantity=document.getElementById("order-quantity").value;
-  const payment=document.getElementById("payment-method").value;
-  const address=document.getElementById("delivery-address").value.trim();
-  const notes=document.getElementById("delivery-notes").value.trim();
-  let details="\\n\\nORDER DETAILS\\nProduct / combo: "+item+"\\nQuantity / pack size: "+quantity+"\\nPreferred payment: "+payment;
-  if(name) details += "\\nCustomer name: "+name;
-  if(address) details += "\\nDelivery address: "+address;
-  if(notes) details += "\\nLandmark / instructions: "+notes;
-  if(selectedLocationLink) details += "\\nCustomer map location: "+selectedLocationLink;
+  
+function currentDeliveryDetails() {
+  const name = document.getElementById("customer-name").value.trim();
+  const item = document.getElementById("order-item").value;
+  const quantity = document.getElementById("order-quantity").value;
+  const payment = document.getElementById("payment-method").value;
+  const address = document.getElementById("delivery-address").value.trim();
+  const notes = document.getElementById("delivery-notes").value.trim();
+
+  let details = "\n\nORDER DETAILS\nProduct / combo: " + item +
+    "\nQuantity / pack size: " + quantity +
+    "\nPreferred payment: " + payment;
+
+  if (name) details += "\nCustomer name: " + name;
+  if (address) details += "\nDelivery address: " + address;
+  if (notes) details += "\nLandmark / instructions: " + notes;
+  if (selectedLocationLink) {
+    details += "\nCustomer map location: " + selectedLocationLink;
+  }
+
   return details;
 }
+
 function openOrder(){
   const details=currentDeliveryDetails();
   const message="Hello Freshora Naturals! I would like to place an order."+details+"\\n\\nPlease confirm availability, final price and whether my address is within the 5 km delivery area around Attibele. I understand the order is not confirmed until you reply.";
