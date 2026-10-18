@@ -73,8 +73,6 @@
 const WHATSAPP_NUMBER = "918296594446";
 let selectedLocationLink = "";
 function waLink(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
-function currentDeliveryDetails(){
-  
 function currentDeliveryDetails() {
   const name = document.getElementById("customer-name").value.trim();
   const item = document.getElementById("order-item").value;
@@ -97,10 +95,12 @@ function currentDeliveryDetails() {
   return details;
 }
 
-function openOrder(){
-  const details=currentDeliveryDetails();
-  const message="Hello Freshora Naturals! I would like to place an order."+details+"\\n\\nPlease confirm availability, final price and whether my address is within the 5 km delivery area around Attibele. I understand the order is not confirmed until you reply.";
-  window.open(waLink(message),"_blank","noopener,noreferrer");
+function openOrder() {
+  const details = currentDeliveryDetails();
+  const message = "Hello Freshora Naturals! I would like to place an order." +
+    details +
+    "\n\nPlease confirm availability, final price and whether my address is within the 5 km delivery area around Attibele. I understand the order is not confirmed until you reply.";
+  window.open(waLink(message), "_blank", "noopener,noreferrer");
 }
 document.querySelectorAll(".order-btn").forEach(btn=>btn.addEventListener("click",e=>{e.preventDefault();const item=btn.dataset.item;const select=document.getElementById("order-item");const option=[...select.options].find(o=>o.value===item||o.textContent.includes(item));if(option)select.value=option.value;document.getElementById("delivery-location").scrollIntoView({behavior:"smooth",block:"start"});}));
 ["main-wa","float-wa"].forEach(id=>document.getElementById(id).addEventListener("click",e=>{e.preventDefault();document.getElementById("delivery-location").scrollIntoView({behavior:"smooth",block:"start"});}));
