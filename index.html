@@ -53,32 +53,47 @@
   </div></section>
   <section class="promise" id="about"><div class="wrap promise-grid"><div><span class="section-kicker" style="color:#c7dcae">The Freshora promise</span><h2>Fresh choices.<br>Thoughtful preparation.</h2><p class="promise-copy">We believe everyday food can feel simple, fresh and good. Our focus is on careful preparation, hygienic handling and friendly service for our local community.</p></div><div class="promise-list"><div class="promise-item"><span>🌿</span><strong>Fresh-focused</strong><small>Seasonal produce and simple ingredients.</small></div><div class="promise-item"><span>🧼</span><strong>Hygiene first</strong><small>Prepared with care and attention.</small></div><div class="promise-item"><span>🚫</span><strong>No onion, no garlic</strong><small>Our stated preparation preference.</small></div><div class="promise-item"><span>💚</span><strong>Made with care</strong><small>Friendly local service in Attibele.</small></div></div></div></section>
   <section class="order-section" id="contact"><div class="wrap"><div class="order-box"><div><span class="section-kicker">Let's make it fresh</span><h2>Ready to order for today?</h2><p>Message Freshora Naturals on WhatsApp to ask about today's availability, combo options and delivery. We currently serve customers within a 5 km radius of Attibele.</p><p class="location-line"><strong>Freshora Naturals</strong> · Attibele, Karnataka · Delivery radius: 5 km · Founder: Shoba M</p></div><a class="btn btn-primary" href="#" id="main-wa">Chat with us on WhatsApp <span>↗</span></a></div>
-    <div class="location-panel" id="delivery-location"><span class="section-kicker">Delivery details</span><h3>Where should we deliver?</h3><p>Share your delivery location with Freshora Naturals so we can deliver to you and check whether your address is within our 5 km service area. Your browser will ask permission before accessing your current location. We do not send Freshora Naturals’ location to customers.</p><div class="location-actions"><button type="button" class="btn btn-primary" id="use-location">◎ Use my current location</button><button type="button" class="btn btn-light" id="share-location-wa">Share location on WhatsApp</button></div><div id="location-status" class="location-status" role="status" aria-live="polite">No location selected yet. You can use your current location or enter your address below.</div><label class="field-label" for="delivery-address">Or enter your delivery address manually</label><input class="address-input" id="delivery-address" type="text" autocomplete="street-address" placeholder="House / flat, street, area and landmark"><label class="field-label" for="delivery-notes">Additional landmark or delivery instructions (optional)</label><input class="address-input" id="delivery-notes" type="text" placeholder="E.g. near the main bus stop"><div class="location-actions"><button type="button" class="btn btn-primary" id="continue-location">Continue on WhatsApp</button></div><p class="location-help">Privacy note: your location is requested only when you tap the button. If you continue to WhatsApp, your selected location link and delivery details are sent to Freshora Naturals for fulfilment. The website does not share the business location with customers and does not continuously track you or the delivery rider. Please confirm your full address on WhatsApp.</p></div>
+    <div class="location-panel" id="delivery-location"><span class="section-kicker">Place an order</span><h3>What would you like to order?</h3><p>Choose your product, quantity and payment preference. Your selections will be included in the WhatsApp message sent to Freshora Naturals. Delivery is available within 5 km of Attibele, subject to address confirmation.</p>
+<label class="field-label" for="customer-name">Your name</label><input class="address-input" id="customer-name" type="text" autocomplete="name" placeholder="Enter your name">
+<label class="field-label" for="order-item">Select product or combo</label><select class="address-input" id="order-item"><option value="Combo 1 - Fresh Starter Box (₹99)">Combo 1 — Fresh Starter Box (₹99)</option><option value="Combo 2 - Fresh & Filling Box (₹130)">Combo 2 — Fresh & Filling Box (₹130)</option><option value="Combo 3 - Power Combo Box (₹150)">Combo 3 — Power Combo Box (₹150)</option><option value="Vegetable Cutting">Vegetable Cutting</option><option value="Fresh Sprouts">Fresh Sprouts</option><option value="Fresh Juices">Fresh Juices</option></select>
+<label class="field-label" for="order-quantity">Quantity / pack size</label><select class="address-input" id="order-quantity"><option value="1 box">1 box (combo offer)</option><option value="250 g">250 g</option><option value="500 g">500 g</option><option value="1 kg">1 kg</option><option value="Please advise">Please advise me</option></select>
+<label class="field-label" for="payment-method">Preferred payment method</label><select class="address-input" id="payment-method"><option value="UPI (Google Pay / PhonePe / Paytm)">UPI (Google Pay / PhonePe / Paytm)</option><option value="Cash on delivery">Cash on delivery</option><option value="Please confirm available options">Please confirm available options</option></select>
+<div class="location-actions"><button type="button" class="btn btn-primary" id="use-location">◎ Use my current location</button><button type="button" class="btn btn-light" id="share-location-wa">Share location on WhatsApp</button></div>
+<div id="location-status" class="location-status" role="status" aria-live="polite">No location selected yet. Use current location or enter your address below.</div>
+<label class="field-label" for="delivery-address">Delivery address</label><input class="address-input" id="delivery-address" type="text" autocomplete="street-address" placeholder="House / flat, street, area and landmark">
+<label class="field-label" for="delivery-notes">Additional landmark or delivery instructions (optional)</label><input class="address-input" id="delivery-notes" type="text" placeholder="E.g. near the main bus stop">
+<div class="location-actions"><button type="button" class="btn btn-primary" id="continue-location">Continue on WhatsApp</button></div>
+<p class="location-help">Your device location is requested only when you tap the button. Only the customer's delivery location is sent to the business. Please confirm the address and final price before payment.</p></div>
   </div></section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-top"><a class="brand" href="#top"><span class="brand-mark">F<span style="color:#e8bd63">.</span></span><span><span class="brand-name">Freshora Naturals</span><span class="brand-tag">Pure food, positive living</span></span></a><div class="footer-links"><a href="#combos">Combo offers</a><a href="#products">Our products</a><a href="#about">Our promise</a><a href="#contact">Contact</a></div><p>Fresh & healthy options for everyday living.</p></div><div class="copyright"><span>© <span id="year"></span> Freshora Naturals. All rights reserved.</span><span>Prepared with care in Attibele, Karnataka 🌿</span></div></div></footer>
 <a class="wa-float" href="#" id="float-wa" aria-label="Order on WhatsApp"><span class="wa-symbol">↗</span> WhatsApp order</a>
 <script>
-// Confirm this is the correct business WhatsApp number before publishing.
+// Freshora Naturals order WhatsApp: India country code (91) + business number (8296594446).
 const WHATSAPP_NUMBER = "918296594446";
 let selectedLocationLink = "";
 function waLink(message){return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message)}
 function currentDeliveryDetails(){
+  const name=document.getElementById("customer-name").value.trim();
+  const item=document.getElementById("order-item").value;
+  const quantity=document.getElementById("order-quantity").value;
+  const payment=document.getElementById("payment-method").value;
   const address=document.getElementById("delivery-address").value.trim();
   const notes=document.getElementById("delivery-notes").value.trim();
-  let details="";
-  if(address) details += "\nDelivery address: "+address;
-  if(notes) details += "\nLandmark/instructions: "+notes;
-  if(selectedLocationLink) details += "\nMap location: "+selectedLocationLink;
+  let details="\\n\\nORDER DETAILS\\nProduct / combo: "+item+"\\nQuantity / pack size: "+quantity+"\\nPreferred payment: "+payment;
+  if(name) details += "\\nCustomer name: "+name;
+  if(address) details += "\\nDelivery address: "+address;
+  if(notes) details += "\\nLandmark / instructions: "+notes;
+  if(selectedLocationLink) details += "\\nCustomer map location: "+selectedLocationLink;
   return details;
 }
-function openOrder(item){
+function openOrder(){
   const details=currentDeliveryDetails();
-  const message="Hello Freshora Naturals! I would like to enquire/order: "+item+"."+details+"\nPlease confirm availability, delivery eligibility within 5 km of Attibele, total amount and payment method. If my location is not included above, I will share a WhatsApp location pin in this chat.";
+  const message="Hello Freshora Naturals! I would like to place an order."+details+"\\n\\nPlease confirm availability, final price and whether my address is within the 5 km delivery area around Attibele. I understand the order is not confirmed until you reply.";
   window.open(waLink(message),"_blank","noopener,noreferrer");
 }
-document.querySelectorAll(".order-btn").forEach(btn=>btn.addEventListener("click",e=>{e.preventDefault();openOrder(btn.dataset.item)}));
-["main-wa","float-wa"].forEach(id=>document.getElementById(id).addEventListener("click",e=>{e.preventDefault();openOrder("Freshora Naturals products and combo offers")}));
+document.querySelectorAll(".order-btn").forEach(btn=>btn.addEventListener("click",e=>{e.preventDefault();const item=btn.dataset.item;const select=document.getElementById("order-item");const option=[...select.options].find(o=>o.value===item||o.textContent.includes(item));if(option)select.value=option.value;document.getElementById("delivery-location").scrollIntoView({behavior:"smooth",block:"start"});}));
+["main-wa","float-wa"].forEach(id=>document.getElementById(id).addEventListener("click",e=>{e.preventDefault();document.getElementById("delivery-location").scrollIntoView({behavior:"smooth",block:"start"});}));
 const locationStatus=document.getElementById("location-status");
 document.getElementById("use-location").addEventListener("click",()=>{
   if(!navigator.geolocation){locationStatus.textContent="Your browser does not support location access. Please enter your address manually or share your location on WhatsApp.";return;}
@@ -103,7 +118,7 @@ document.getElementById("continue-location").addEventListener("click",()=>{
     locationStatus.textContent="Please use the current-location button, enter your delivery address, or choose Share location on WhatsApp before continuing.";
     document.getElementById("delivery-address").focus();return;
   }
-  openOrder("Delivery address / location confirmation");
+  openOrder();
 });
 document.getElementById("year").textContent=new Date().getFullYear();
 const menuToggle=document.getElementById("menu-toggle"),navLinks=document.getElementById("nav-links");menuToggle.addEventListener("click",()=>{const open=navLinks.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open));menuToggle.textContent=open?"×":"☰"});navLinks.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{navLinks.classList.remove("open");menuToggle.setAttribute("aria-expanded","false");menuToggle.textContent="☰"}));
